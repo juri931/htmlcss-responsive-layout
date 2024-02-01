@@ -54,6 +54,43 @@ header .container{
 /* HEADER END */
 
 
+/* MAIN START */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  padding-top: 65px;
+}
+
+.jumbo{
+  display: flex;
+  width: 85%;
+  height: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.jumbo .card{
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  height: 32%;
+  width: 32%;
+  margin: 5px;
+}
+
+.jumbo div:first-child{
+  width: 64%;
+  height: 32%;
+}
+
+.jumbo div:first-child img{
+  width: 25%;
+}
+/*  MAIN END */
+
 
 
 
