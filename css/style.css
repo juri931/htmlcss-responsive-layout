@@ -47,4 +47,30 @@ header .container{
   padding: 3px 7px;
   border-radius: 12px;
 }
+
+#hamburger{
+  display: none;
+}
 /* HEADER END */
+
+
+
+
+
+/* MEDIA QUERY RULES */
+
+/* MOBILE */
+@media screen and (max-width: 480px){
+
+}
+
+/* TABLET */
+@media screen and (max-width: 768px){
+    header .menu{
+    display: none;
+  }
+
+  #hamburger{
+    display: block;
+}
+}
