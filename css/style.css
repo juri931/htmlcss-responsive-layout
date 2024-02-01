@@ -23,7 +23,7 @@ header .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 85%;
+  width: 70%;
   max-width: 1200px;
 }
 
@@ -66,7 +66,7 @@ header .container{
 
 .jumbo{
   display: flex;
-  width: 85%;
+  width: 70%;
   height: 80%;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -76,14 +76,15 @@ header .container{
   position: relative;
   text-align: center;
   padding: 5px;
-  height: 32%;
+  min-height: 32%;
   width: 32%;
   margin: 5px;
+  background-color: rgb(189, 219, 255);
 }
 
 .jumbo div:first-child{
   width: 64%;
-  height: 32%;
+  min-height: 32%;
 }
 
 .jumbo div:first-child img{
