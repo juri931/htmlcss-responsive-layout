@@ -82,21 +82,38 @@ header .container{
   min-width: 200px;
   margin: 5px;
   background-color: rgb(189, 219, 255);
+  border-radius: 20px;
 }
 
 .jumbo div:first-child{
-  width: 64%;
+  text-align: left;
+  width: 65%;
   min-height: 32%;
+  justify-content: space-between;
+}
+
+.jumbo div a{
+  color: white;
+  text-decoration: none;
+  padding: 7px 30px;
+  background-color: rgb(69, 131, 253);
+  border-radius: 20px;
 }
 
 .jumbo div:first-child i{
   font-size: 1rem;
+  padding: 4px;
   color: white;
-  margin-right: 4px;
 }
 
-.jumbo div:first-child img{
-  width: 25%;
+#phone{
+  display: flex;
+  max-width: fit-content;
+}
+
+.card *{
+  justify-content: center;
+  padding: 20px;
 }
 
 .card i{
@@ -106,6 +123,11 @@ header .container{
 
 .card h3{
   color: rgb(69, 131, 253);
+}
+
+.card p{
+  font-weight: 600;
+  color: rgb(86, 99, 114);
 }
 /*  MAIN END */
 
