@@ -60,7 +60,7 @@ header .container{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 500px;
+  height: 800px;
   padding-top: 65px;
 }
 
@@ -68,7 +68,7 @@ header .container{
   display: flex;
   width: 70%;
   height: 80%;
-  justify-content: space-between;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
 }
 
@@ -76,8 +76,10 @@ header .container{
   position: relative;
   text-align: center;
   padding: 5px;
-  min-height: 32%;
+  min-height: 240px;
+  max-height: fit-content;
   width: 32%;
+  min-width: 200px;
   margin: 5px;
   background-color: rgb(189, 219, 255);
 }
@@ -87,8 +89,23 @@ header .container{
   min-height: 32%;
 }
 
+.jumbo div:first-child i{
+  font-size: 1rem;
+  color: white;
+  margin-right: 4px;
+}
+
 .jumbo div:first-child img{
   width: 25%;
+}
+
+.card i{
+  font-size: 3em;
+  color: rgb(69, 131, 253);
+}
+
+.card h3{
+  color: rgb(69, 131, 253);
 }
 /*  MAIN END */
 
