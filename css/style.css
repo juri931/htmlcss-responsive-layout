@@ -8,6 +8,20 @@ body{
   font-family: "PT Sans", sans-serif;
 }
 
+main{
+  padding-top: 65px;
+}
+
+/* debug */
+header,
+.container,
+.row,
+.col {
+  background-color: rgba(0, 255, 0, .1);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
 /* HEADER START */
 header{
   width: 100%;
@@ -29,6 +43,7 @@ header .container{
 
 .menu{
   display: flex;
+  display: none;
 }
 
 .menu li{
@@ -49,107 +64,93 @@ header .container{
 }
 
 #hamburger{
-  display: none;
+  display: block;
 }
 /* HEADER END */
 
 
 /* MAIN START */
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  /* height: 800px; */
-  max-height: fit-content;
-  padding-top: 65px;
 }
 
-.jumbo{
-  display: flex;
-  /* justify-content: center; */
-  width: 70%;
-  height: 80%;
-  flex-wrap: wrap;
-  padding: 30px 0;
+.col{
+  width: 100%;
+  padding: 10px;
 }
 
-.jumbo .card{
-  position: relative;
-  text-align: center;
-  padding: 5px;
-  min-height: 240px;
-  max-height: fit-content;
-  width: 32%;
-  min-width: 200px;
-  margin: 4px;
-  background-color: rgb(189, 219, 255);
-  border-radius: 20px;
-}
-
-.jumbo div:first-child{
-  text-align: left;
-  width: 65%;
-  min-height: 32%;
-  justify-content: space-between;
-}
-
-.jumbo div a{
-  color: white;
-  text-decoration: none;
-  padding: 7px 30px;
-  background-color: rgb(69, 131, 253);
-  border-radius: 20px;
-}
-
-.jumbo div:first-child i{
-  font-size: 1rem;
-  padding: 4px;
-  color: white;
-}
-
-#phone{
-  display: flex;
-  max-width: fit-content;
-}
-
-.card *{
-  justify-content: center;
-  padding: 20px;
-}
-
-.card i{
-  font-size: 3em;
-  color: rgb(69, 131, 253);
-}
-
-.card h3{
-  color: rgb(69, 131, 253);
-}
-
-.card p{
-  font-weight: 600;
-  color: rgb(86, 99, 114);
-}
-/*  MAIN END */
-
-
-
-
-/* MEDIA QUERY RULES */
-
-/* MOBILE */
-@media screen and (max-width: 480px){
-
-}
+/* MEDIA QUERY */
 
 /* TABLET */
-@media screen and (max-width: 768px){
-    header .menu{
+@media screen and (min-width: 768px){
+  .container{
+    width: 720px;
+  }
+  #demo .col {
+    width: calc(100% / 3);
+  }
+  
+  #demo .col:first-child {
+    width: calc(100% / 1.5);
+  }
+  #testimonials .card .row {
+    flex-wrap: nowrap;
+  }
+  
+  #testimonials .card .col:first-child {
+    width: 20%;
+  }
+  
+  #testimonials .card .col:last-child {
+    width: 80%;
+  }
+  
+  #benefits .col {
+    width: 50%;
+  }
+  
+  #aboutus .col:first-child {
+    width: 60%;
+  }
+  
+  #aboutus .col:last-child {
+    width: 40%;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px){
+  #hamburger{
     display: none;
   }
 
-  #hamburger{
-    display: block;
+  .menu{
+    display: flex;
+  }
+
+  .container {
+    width: 1140px;
+  }
+
+  #strategic .col {
+    width: 50%;
+  }
+
+  #benefits .col {
+    width: calc(100% / 3);
+  }
+
+  #aboutus .col:first-child {
+    width: 70%;
+  }
+
+  #aboutus .col:last-child {
+    width: 30%;
   }
 }
