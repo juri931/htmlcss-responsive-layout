@@ -85,6 +85,27 @@ header .container{
   padding: 10px;
 }
 
+#demo .col{
+  display: flex;
+  align-items: flex-end;
+}
+
+#phone{
+  text-align: center;
+}
+
+#demo a{
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(69, 131, 253);
+}
+
+#demo img{
+  max-width: 40%;
+}
+
 /* MEDIA QUERY */
 
 /* TABLET */
