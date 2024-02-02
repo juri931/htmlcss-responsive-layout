@@ -37,8 +37,7 @@ header .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
-  max-width: 1200px;
+  /* width: 70%; */
 }
 
 .menu{
@@ -71,8 +70,9 @@ header .container{
 
 /* MAIN START */
 .container{
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .row{
@@ -81,13 +81,24 @@ header .container{
 }
 
 .col{
+  background-color: rgb(189, 219, 255);
   width: 100%;
   padding: 10px;
+  flex-flow: column;
 }
 
-#demo .col{
+.col .demo{
   display: flex;
-  align-items: flex-end;
+  flex-flow: row;
+}
+
+#demo-text{
+  display: flex;
+  flex-flow: column;
+}
+
+#demo-text *{
+  padding: 10px 0;
 }
 
 #phone{
@@ -96,6 +107,7 @@ header .container{
 
 #demo a{
   text-decoration: none;
+  width: fit-content;
   padding: 5px 20px;
   border-radius: 20px;
   color: white;
@@ -103,9 +115,8 @@ header .container{
 }
 
 #demo img{
-  max-width: 40%;
+  width: 200px;
 }
-
 /* MEDIA QUERY */
 
 /* TABLET */
@@ -156,7 +167,7 @@ header .container{
   }
 
   .container {
-    width: 1140px;
+    width: 70%;
   }
 
   #strategic .col {
